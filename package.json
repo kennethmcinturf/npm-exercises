@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "build:watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/kennethmcinturf/npm-exercises/issues"
   },
-  "homepage": "https://github.com/kennethmcinturf/npm-exercises#readme"
+  "homepage": "https://github.com/kennethmcinturf/npm-exercises#readme",
+  "dependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "jquery": "^3.3.1",
+    "webpack": "^4.23.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.2"
+  }
 }
